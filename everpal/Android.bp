@@ -3472,6 +3472,23 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+	name: "libCamera_ov50c40ofilmmipiraw_SuperNS_Scene_Preview",
+	owner: "xiaomi",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libCamera_ov50c40ofilmmipiraw_SuperNS_Scene_Preview.so"],
+		},
+	},
+	compile_multilib: "64",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
 	name: "libCamera_ov50c40ofilmmipiraw_SuperNS_Scene_Preview_Zoom1",
 	owner: "xiaomi",
 	strip: {
@@ -3837,6 +3854,23 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm64: {
 			srcs: ["proprietary/vendor/lib64/libCamera_s5kjn1sunnymipiraw_3rd_Capture.so"],
+		},
+	},
+	compile_multilib: "64",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libCamera_s5kjn1sunnymipiraw_Color_Capture",
+	owner: "xiaomi",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libCamera_s5kjn1sunnymipiraw_Color_Capture.so"],
 		},
 	},
 	compile_multilib: "64",
@@ -4449,6 +4483,23 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm64: {
 			srcs: ["proprietary/vendor/lib64/libCamera_s5kjn1sunnymipiraw_SuperNS_Scene_Capture_Zoom2.so"],
+		},
+	},
+	compile_multilib: "64",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libCamera_s5kjn1sunnymipiraw_SuperNS_Scene_Preview",
+	owner: "xiaomi",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libCamera_s5kjn1sunnymipiraw_SuperNS_Scene_Preview.so"],
 		},
 	},
 	compile_multilib: "64",
@@ -7908,70 +7959,142 @@ cc_prebuilt_library_shared {
 	soc_specific: true,
 }
 
-sh_binary {
+cc_prebuilt_binary {
 	name: "batterysecret",
 	owner: "xiaomi",
-	src: "proprietary/vendor/bin/batterysecret",
-	filename: "batterysecret",
+	target: {
+		android_arm64: {
+			srcs: ["proprietary/vendor/bin/batterysecret"],
+		},
+	},
+	compile_multilib: "64",
+	check_elf_files: false,
+	strip: {
+		none: true,
+	},
+	prefer: true,
 	soc_specific: true,
 }
 
-sh_binary {
+cc_prebuilt_binary {
 	name: "fuelgauged_nvram",
 	owner: "xiaomi",
-	src: "proprietary/vendor/bin/fuelgauged_nvram",
-	filename: "fuelgauged_nvram",
+	target: {
+		android_arm64: {
+			srcs: ["proprietary/vendor/bin/fuelgauged_nvram"],
+		},
+	},
+	compile_multilib: "64",
+	check_elf_files: false,
+	strip: {
+		none: true,
+	},
+	prefer: true,
 	soc_specific: true,
 }
 
-sh_binary {
+cc_prebuilt_binary {
 	name: "android.hardware.secure_element@1.2-service-mediatek",
 	owner: "xiaomi",
-	src: "proprietary/vendor/bin/hw/android.hardware.secure_element@1.2-service-mediatek",
-	filename: "android.hardware.secure_element@1.2-service-mediatek",
-	sub_dir: "hw",
+	target: {
+		android_arm64: {
+			srcs: ["proprietary/vendor/bin/hw/android.hardware.secure_element@1.2-service-mediatek"],
+		},
+	},
+	compile_multilib: "64",
+	check_elf_files: false,
+	strip: {
+		none: true,
+	},
+	prefer: true,
+	relative_install_path: "hw",
 	soc_specific: true,
 }
 
-sh_binary {
+cc_prebuilt_binary {
 	name: "camerahalserver",
 	owner: "xiaomi",
-	src: "proprietary/vendor/bin/hw/camerahalserver",
-	filename: "camerahalserver",
-	sub_dir: "hw",
+	target: {
+		android_arm64: {
+			srcs: ["proprietary/vendor/bin/hw/camerahalserver"],
+		},
+	},
+	compile_multilib: "64",
+	check_elf_files: false,
+	strip: {
+		none: true,
+	},
+	prefer: true,
+	relative_install_path: "hw",
 	soc_specific: true,
 }
 
-sh_binary {
+cc_prebuilt_binary {
 	name: "vendor.mediatek.hardware.pq@2.2-service",
 	owner: "xiaomi",
-	src: "proprietary/vendor/bin/hw/vendor.mediatek.hardware.pq@2.2-service",
-	filename: "vendor.mediatek.hardware.pq@2.2-service",
-	sub_dir: "hw",
+	target: {
+		android_arm64: {
+			srcs: ["proprietary/vendor/bin/hw/vendor.mediatek.hardware.pq@2.2-service"],
+		},
+	},
+	compile_multilib: "64",
+	check_elf_files: false,
+	strip: {
+		none: true,
+	},
+	prefer: true,
+	relative_install_path: "hw",
 	soc_specific: true,
 }
 
-sh_binary {
+cc_prebuilt_binary {
 	name: "nvram_daemon",
 	owner: "xiaomi",
-	src: "proprietary/vendor/bin/nvram_daemon",
-	filename: "nvram_daemon",
+	target: {
+		android_arm64: {
+			srcs: ["proprietary/vendor/bin/nvram_daemon"],
+		},
+	},
+	compile_multilib: "64",
+	check_elf_files: false,
+	strip: {
+		none: true,
+	},
+	prefer: true,
 	soc_specific: true,
 }
 
-sh_binary {
+cc_prebuilt_binary {
 	name: "teei_daemon",
 	owner: "xiaomi",
-	src: "proprietary/vendor/bin/teei_daemon",
-	filename: "teei_daemon",
+	target: {
+		android_arm64: {
+			srcs: ["proprietary/vendor/bin/teei_daemon"],
+		},
+	},
+	compile_multilib: "64",
+	check_elf_files: false,
+	strip: {
+		none: true,
+	},
+	prefer: true,
 	soc_specific: true,
 }
 
-sh_binary {
+cc_prebuilt_binary {
 	name: "vpud",
 	owner: "xiaomi",
-	src: "proprietary/vendor/bin/vpud",
-	filename: "vpud",
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/bin/vpud"],
+		},
+	},
+	compile_multilib: "32",
+	check_elf_files: false,
+	strip: {
+		none: true,
+	},
+	prefer: true,
 	soc_specific: true,
 }
 

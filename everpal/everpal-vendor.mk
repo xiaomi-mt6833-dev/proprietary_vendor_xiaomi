@@ -327,6 +327,7 @@ PRODUCT_PACKAGES += \
     libCamera_ov50c40ofilmmipiraw_SuperNS_Scene_Capture \
     libCamera_ov50c40ofilmmipiraw_SuperNS_Scene_Capture_Zoom1 \
     libCamera_ov50c40ofilmmipiraw_SuperNS_Scene_Capture_Zoom2 \
+    libCamera_ov50c40ofilmmipiraw_SuperNS_Scene_Preview \
     libCamera_ov50c40ofilmmipiraw_SuperNS_Scene_Preview_Zoom1 \
     libCamera_ov50c40ofilmmipiraw_SuperNS_Scene_Preview_Zoom2 \
     libCamera_ov50c40ofilmmipiraw_Video_1080 \
@@ -349,6 +350,7 @@ PRODUCT_PACKAGES += \
     libCamera_ov50c40ofilmmipiraw_portrait_capture_full \
     libCamera_ov50c40ofilmmipiraw_portrait_preview_full \
     libCamera_s5kjn1sunnymipiraw_3rd_Capture \
+    libCamera_s5kjn1sunnymipiraw_Color_Capture \
     libCamera_s5kjn1sunnymipiraw_E2EHDR_Preview \
     libCamera_s5kjn1sunnymipiraw_E2EHDR_Video \
     libCamera_s5kjn1sunnymipiraw_Face_Capture \
@@ -385,6 +387,7 @@ PRODUCT_PACKAGES += \
     libCamera_s5kjn1sunnymipiraw_SuperNS_Scene_Capture \
     libCamera_s5kjn1sunnymipiraw_SuperNS_Scene_Capture_Zoom1 \
     libCamera_s5kjn1sunnymipiraw_SuperNS_Scene_Capture_Zoom2 \
+    libCamera_s5kjn1sunnymipiraw_SuperNS_Scene_Preview \
     libCamera_s5kjn1sunnymipiraw_SuperNS_Scene_Preview_Zoom1 \
     libCamera_s5kjn1sunnymipiraw_SuperNS_Scene_Preview_Zoom2 \
     libCamera_s5kjn1sunnymipiraw_Video_1080 \
